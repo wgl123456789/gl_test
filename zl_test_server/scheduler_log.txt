@@ -1,0 +1,82 @@
+2020-05-27 14:21:34 base.py[line:440] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2020-05-27 14:21:34 base.py[line:440] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2020-05-27 14:21:34 base.py[line:881] INFO Added job "error_task" to job store "default"
+2020-05-27 14:21:34 base.py[line:881] INFO Added job "normal_task" to job store "default"
+2020-05-27 14:21:34 base.py[line:166] INFO Scheduler started
+2020-05-27 14:21:36 base.py[line:123] INFO Running job "error_task (trigger: date[2020-05-27 14:21:34 CST], next run at: 2020-05-27 14:21:36 CST)" (scheduled at 2020-05-27 14:21:36.239592+08:00)
+2020-05-27 14:21:36 base.py[line:627] INFO Removed job 82480dace0f1492984d59f021817dc32
+2020-05-27 14:21:36 base.py[line:131] ERROR Job "error_task (trigger: date[2020-05-27 14:21:34 CST], next run at: 2020-05-27 14:21:36 CST)" raised an exception
+Traceback (most recent call last):
+  File "C:\Users\Administrator\Envs\autotest-env\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "E:\VIPCourse\codes\TestDev\ZLTest_class\zl_test_server\apschedulerѧϰ\scheduler_exception.py", line 19, in error_task
+    print(1/0)
+ZeroDivisionError: division by zero
+2020-05-27 14:21:37 base.py[line:123] INFO Running job "normal_task (trigger: interval[0:00:03], next run at: 2020-05-27 14:21:40 CST)" (scheduled at 2020-05-27 14:21:37.277949+08:00)
+2020-05-27 14:21:37 base.py[line:144] INFO Job "normal_task (trigger: interval[0:00:03], next run at: 2020-05-27 14:21:40 CST)" executed successfully
+2020-05-27 14:21:40 base.py[line:123] INFO Running job "normal_task (trigger: interval[0:00:03], next run at: 2020-05-27 14:21:43 CST)" (scheduled at 2020-05-27 14:21:40.277949+08:00)
+2020-05-27 14:21:40 base.py[line:144] INFO Job "normal_task (trigger: interval[0:00:03], next run at: 2020-05-27 14:21:43 CST)" executed successfully
+2020-05-27 14:21:43 base.py[line:123] INFO Running job "normal_task (trigger: interval[0:00:03], next run at: 2020-05-27 14:21:46 CST)" (scheduled at 2020-05-27 14:21:43.277949+08:00)
+2020-05-27 14:21:43 base.py[line:144] INFO Job "normal_task (trigger: interval[0:00:03], next run at: 2020-05-27 14:21:46 CST)" executed successfully
+2020-05-27 14:21:46 base.py[line:123] INFO Running job "normal_task (trigger: interval[0:00:03], next run at: 2020-05-27 14:21:49 CST)" (scheduled at 2020-05-27 14:21:46.277949+08:00)
+2020-05-27 14:21:46 base.py[line:144] INFO Job "normal_task (trigger: interval[0:00:03], next run at: 2020-05-27 14:21:49 CST)" executed successfully
+2020-05-27 14:21:49 base.py[line:123] INFO Running job "normal_task (trigger: interval[0:00:03], next run at: 2020-05-27 14:21:52 CST)" (scheduled at 2020-05-27 14:21:49.277949+08:00)
+2020-05-27 14:21:49 base.py[line:144] INFO Job "normal_task (trigger: interval[0:00:03], next run at: 2020-05-27 14:21:52 CST)" executed successfully
+2020-05-27 14:21:52 base.py[line:123] INFO Running job "normal_task (trigger: interval[0:00:03], next run at: 2020-05-27 14:21:55 CST)" (scheduled at 2020-05-27 14:21:52.277949+08:00)
+2020-05-27 14:21:52 base.py[line:144] INFO Job "normal_task (trigger: interval[0:00:03], next run at: 2020-05-27 14:21:55 CST)" executed successfully
+2020-05-27 14:21:55 base.py[line:123] INFO Running job "normal_task (trigger: interval[0:00:03], next run at: 2020-05-27 14:21:58 CST)" (scheduled at 2020-05-27 14:21:55.277949+08:00)
+2020-05-27 14:21:55 base.py[line:144] INFO Job "normal_task (trigger: interval[0:00:03], next run at: 2020-05-27 14:21:58 CST)" executed successfully
+2020-05-27 14:21:58 base.py[line:123] INFO Running job "normal_task (trigger: interval[0:00:03], next run at: 2020-05-27 14:22:01 CST)" (scheduled at 2020-05-27 14:21:58.277949+08:00)
+2020-05-27 14:21:58 base.py[line:144] INFO Job "normal_task (trigger: interval[0:00:03], next run at: 2020-05-27 14:22:01 CST)" executed successfully
+2020-05-27 14:22:01 base.py[line:123] INFO Running job "normal_task (trigger: interval[0:00:03], next run at: 2020-05-27 14:22:04 CST)" (scheduled at 2020-05-27 14:22:01.277949+08:00)
+2020-05-27 14:22:01 base.py[line:144] INFO Job "normal_task (trigger: interval[0:00:03], next run at: 2020-05-27 14:22:04 CST)" executed successfully
+2020-05-27 14:22:04 base.py[line:123] INFO Running job "normal_task (trigger: interval[0:00:03], next run at: 2020-05-27 14:22:07 CST)" (scheduled at 2020-05-27 14:22:04.277949+08:00)
+2020-05-27 14:22:04 base.py[line:144] INFO Job "normal_task (trigger: interval[0:00:03], next run at: 2020-05-27 14:22:07 CST)" executed successfully
+2020-05-27 14:22:07 base.py[line:123] INFO Running job "normal_task (trigger: interval[0:00:03], next run at: 2020-05-27 14:22:10 CST)" (scheduled at 2020-05-27 14:22:07.277949+08:00)
+2020-05-27 14:22:07 base.py[line:144] INFO Job "normal_task (trigger: interval[0:00:03], next run at: 2020-05-27 14:22:10 CST)" executed successfully
+2020-05-27 14:22:10 base.py[line:123] INFO Running job "normal_task (trigger: interval[0:00:03], next run at: 2020-05-27 14:22:13 CST)" (scheduled at 2020-05-27 14:22:10.277949+08:00)
+2020-05-27 14:22:10 base.py[line:144] INFO Job "normal_task (trigger: interval[0:00:03], next run at: 2020-05-27 14:22:13 CST)" executed successfully
+2020-05-27 14:22:13 base.py[line:123] INFO Running job "normal_task (trigger: interval[0:00:03], next run at: 2020-05-27 14:22:16 CST)" (scheduled at 2020-05-27 14:22:13.277949+08:00)
+2020-05-27 14:22:13 base.py[line:144] INFO Job "normal_task (trigger: interval[0:00:03], next run at: 2020-05-27 14:22:16 CST)" executed successfully
+2020-05-27 14:22:16 base.py[line:123] INFO Running job "normal_task (trigger: interval[0:00:03], next run at: 2020-05-27 14:22:19 CST)" (scheduled at 2020-05-27 14:22:16.277949+08:00)
+2020-05-27 14:22:16 base.py[line:144] INFO Job "normal_task (trigger: interval[0:00:03], next run at: 2020-05-27 14:22:19 CST)" executed successfully
+2020-05-27 14:22:19 base.py[line:123] INFO Running job "normal_task (trigger: interval[0:00:03], next run at: 2020-05-27 14:22:22 CST)" (scheduled at 2020-05-27 14:22:19.277949+08:00)
+2020-05-27 14:22:19 base.py[line:144] INFO Job "normal_task (trigger: interval[0:00:03], next run at: 2020-05-27 14:22:22 CST)" executed successfully
+2020-05-27 14:22:22 base.py[line:123] INFO Running job "normal_task (trigger: interval[0:00:03], next run at: 2020-05-27 14:22:25 CST)" (scheduled at 2020-05-27 14:22:22.277949+08:00)
+2020-05-27 14:22:22 base.py[line:144] INFO Job "normal_task (trigger: interval[0:00:03], next run at: 2020-05-27 14:22:25 CST)" executed successfully
+2020-05-27 14:22:25 base.py[line:123] INFO Running job "normal_task (trigger: interval[0:00:03], next run at: 2020-05-27 14:22:28 CST)" (scheduled at 2020-05-27 14:22:25.277949+08:00)
+2020-05-27 14:22:25 base.py[line:144] INFO Job "normal_task (trigger: interval[0:00:03], next run at: 2020-05-27 14:22:28 CST)" executed successfully
+2020-05-27 14:22:28 base.py[line:123] INFO Running job "normal_task (trigger: interval[0:00:03], next run at: 2020-05-27 14:22:31 CST)" (scheduled at 2020-05-27 14:22:28.277949+08:00)
+2020-05-27 14:22:28 base.py[line:144] INFO Job "normal_task (trigger: interval[0:00:03], next run at: 2020-05-27 14:22:31 CST)" executed successfully
+2020-05-27 14:22:31 base.py[line:123] INFO Running job "normal_task (trigger: interval[0:00:03], next run at: 2020-05-27 14:22:34 CST)" (scheduled at 2020-05-27 14:22:31.277949+08:00)
+2020-05-27 14:22:31 base.py[line:144] INFO Job "normal_task (trigger: interval[0:00:03], next run at: 2020-05-27 14:22:34 CST)" executed successfully
+2020-05-27 14:22:34 base.py[line:123] INFO Running job "normal_task (trigger: interval[0:00:03], next run at: 2020-05-27 14:22:37 CST)" (scheduled at 2020-05-27 14:22:34.277949+08:00)
+2020-05-27 14:22:34 base.py[line:144] INFO Job "normal_task (trigger: interval[0:00:03], next run at: 2020-05-27 14:22:37 CST)" executed successfully
+2020-05-27 17:00:27 base.py[line:166] INFO Scheduler started
+2020-05-27 17:02:10 log.py[line:222] ERROR Internal Server Error: /task/1
+Traceback (most recent call last):
+  File "C:\Users\Administrator\Envs\autotest-env\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\Administrator\Envs\autotest-env\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\Administrator\Envs\autotest-env\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Administrator\Envs\autotest-env\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\Administrator\Envs\autotest-env\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Administrator\Envs\autotest-env\lib\site-packages\rest_framework\views.py", line 497, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Administrator\Envs\autotest-env\lib\site-packages\rest_framework\views.py", line 457, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Administrator\Envs\autotest-env\lib\site-packages\rest_framework\views.py", line 468, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Administrator\Envs\autotest-env\lib\site-packages\rest_framework\views.py", line 494, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "E:\VIPCourse\codes\TestDev\ZLTest_class\zl_test_server\apps\apitest\views.py", line 250, in put
+    if serializer.is_valid():
+  File "C:\Users\Administrator\Envs\autotest-env\lib\site-packages\rest_framework\serializers.py", line 228, in is_valid
+    assert hasattr(self, 'initial_data'), (
+AssertionError: Cannot call `.is_valid()` as no `data=` keyword argument was passed when instantiating the serializer instance.
+2020-05-27 17:02:23 autoreload.py[line:213] INFO E:\VIPCourse\codes\TestDev\ZLTest_class\zl_test_server\apps\apitest\views.py changed, reloading.
+2020-05-27 17:02:23 base.py[line:166] INFO Scheduler started
